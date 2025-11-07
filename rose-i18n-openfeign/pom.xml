@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.rosestack</groupId>
+    <artifactId>rose-i18n-parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../rose-i18n-parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>io.github.rosestack</groupId>
+  <artifactId>rose-i18n-openfeign</artifactId>
+  <version>${revision}</version>
+  <packaging>jar</packaging>
+
+  <name>Rose :: I18n :: OpenFeign</name>
+  <description>Rose I18n OpenFeign</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.github.rosestack</groupId>
+      <artifactId>rose-i18n-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- Feign -->
+    <dependency>
+      <groupId>io.github.openfeign</groupId>
+      <artifactId>feign-core</artifactId>
+    </dependency>
+
+    <!-- Servlet API -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-api</artifactId>
+          <version>6.0.1</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-test</artifactId>
+          <version>7.0.0-M9</version>
+          <scope>test</scope>
+      </dependency>
+  </dependencies>
+</project>

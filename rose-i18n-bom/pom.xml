@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.rosestack</groupId>
+    <artifactId>rose-i18n-parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../rose-i18n-parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>io.github.rosestack</groupId>
+  <artifactId>rose-i18n-bom</artifactId>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+
+  <name>Rose :: I18n :: Dependencies</name>
+  <description>Rose I18n Dependencies</description>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-i18n-core</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-i18n-openfeign</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-i18n-spring</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-i18n-spring-boot</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-i18n-spring-cloud</artifactId>
+        <version>${revision}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>

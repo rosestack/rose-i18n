@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-build</artifactId>
+        <version>0.1.2</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>io.github.rosestack</groupId>
+    <artifactId>rose-i18n</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <name>Rose :: I18n</name>
+    <description>Rose I18n</description>
+    <url>https://github.com/rosestack/rose-i18n</url>
+
+    <organization>
+        <name>RoseStack</name>
+        <url>https://github.com/rosestack</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>chensoul</id>
+            <name>Chensoul</name>
+            <email>ichensoul@gmail.com</email>
+            <organization>RoseStack</organization>
+            <roles>
+                <role>lead</role>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>git@github.com/rosestack/rose-i18n.git</url>
+        <connection>scm:git:${project.scm.url}</connection>
+        <developerConnection>scm:git:ssh://${project.scm.url}</developerConnection>
+    </scm>
+
+    <properties>
+        <revision>0.0.3-SNAPSHOT</revision>
+    </properties>
+
+    <modules>
+        <module>rose-i18n-parent</module>
+        <module>rose-i18n-bom</module>
+        <module>rose-i18n-core</module>
+        <module>rose-i18n-spring</module>
+        <module>rose-i18n-openfeign</module>
+        <module>rose-i18n-spring-boot</module>
+        <module>rose-i18n-spring-cloud</module>
+    </modules>
+
+</project>
